@@ -1,3 +1,5 @@
+ PSEUDOCODE
+
 #Page Home
 void tampilkanDeskripsi{
     var inputDropDown = get deskripsi from db;
@@ -25,6 +27,25 @@ void Konsultasi Gratis {
     go to page Konsultasi Gratis
 }
 
+
+#Page Layanan
+
+void Pilih Jenis Alat {
+    var inputDropDown = get jenis alat from db;         //masukin data dari data base
+    var input = jenis alat;     //dapet inputan dari customer
+    go to (page.input);        
+}
+
+void Pilih Sub Jenis Alat {
+    var inputTipe = get tipe from db;    //masukin data dari data base
+    var inputWarna = get warna from db;    //masukin data dari data base
+    if(next == true){
+
+}
+    go to (page.input);        
+}
+
+
 void pilih kerusakan{
   var inputDropDown = get tipe kerusakan from db;
   var input = list()
@@ -32,4 +53,14 @@ void pilih kerusakan{
   if (event.addKerusakan() == true){
     input.push(pilih inputDropDown)
   }
+}
+
+void keluhankerusakan{
+    var inputDropDown= get tipe keluhankerusakan from db;
+    
+
+
+void JenisLayanan {
+    var inputDropDown = get JenisLayanan from db;
+    
 }
