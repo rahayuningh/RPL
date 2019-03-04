@@ -1,4 +1,4 @@
-##PSEUDOCODE
+ PSEUDOCODE
 
 #Page Home
 void tampilkanDeskripsi{
@@ -40,7 +40,10 @@ void Pilih Sub Jenis Alat {
     var inputTipe = get tipe from db;    //masukin data dari data base
     var inputWarna = get warna from db;    //masukin data dari data base
     if(next == true){
-
+    go to (page.kerusakan)
+}
+else if(prev == true){
+    go to (page.jenisalat)
 }
     go to (page.input);        
 }
@@ -57,10 +60,12 @@ void pilih kerusakan{
 
 void keluhankerusakan{
     var inputDropDown= get tipe keluhankerusakan from db;
-    
+    var inputMessage = string()
+    var inputPhoto = 
+} 
 
-
-void JenisLayanan {
-    var inputDropDown = get JenisLayanan from db;
+void jenislayanan {
+    var inputDropDown = get jenislayanan from db;
+    var kecamatan = get kecamatan from db;
     
 }
