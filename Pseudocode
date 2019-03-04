@@ -1,3 +1,30 @@
+#Page Home
+void tampilkanDeskripsi{
+    var inputDropDown = get deskripsi from db;
+    print(inputDropDown)
+}
+
+void TentangKami {
+    var inputDropDown = get tentangkami from db;
+    print(inputDropDown)
+}
+
+    void CaraKerja{
+    go to cara kerja;
+}
+
+void layanan {
+    go to layanan utama;
+}
+
+    void KontakdanAlamat{
+    go to halaman kontak dan alamat
+}
+
+void Konsultasi Gratis {
+    go to page Konsultasi Gratis
+}
+
 void pilih kerusakan{
   var inputDropDown = get tipe kerusakan from db;
   var input = list()
