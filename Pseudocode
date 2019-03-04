@@ -1,7 +1,8 @@
-void home {
+void pilih kerusakan{
+  var inputDropDown = get tipe kerusakan from db;
+  var input = list()
+  input.push(pilih inputDropDown)
+  if (event.addKerusakan() == true){
+    input.push(pilih inputDropDown)
+  }
 }
-
-void cara_kerja {
-}
-
-void 
