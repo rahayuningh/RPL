@@ -69,3 +69,16 @@ void jenislayanan {
     var kecamatan = get kecamatan from db;
     
 }
+
+void RekapOrder{
+    var inputDropDown = get datacustomer from db;
+    var Order = get order from db;
+    
+}
+
+void booking {
+    if(booking == true){
+    go to (page.)
+}
+    
+}
