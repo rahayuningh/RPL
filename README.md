@@ -14,6 +14,7 @@ Kelompok 1:
 
 # Penting!!
 Kita pake framework Laravel
+Database: phpMyAdmin
 
 # Install
 Jangan lupa install di laptop masing-masing
