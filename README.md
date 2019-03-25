@@ -13,8 +13,8 @@ Kelompok 1:
 4. Lutfi Adam (G74160046)
 
 # Penting!!
-Kita pake framework Laravel
-Database: phpMyAdmin
+- Kita pake framework Laravel
+- Database: phpMyAdmin
 
 # Install
 Jangan lupa install di laptop masing-masing
