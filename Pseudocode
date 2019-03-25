@@ -78,7 +78,6 @@ void RekapOrder{
 
 void booking {
     if(booking == true){
-    go to (selesai_dan_ucapan_terimakasih)
-}
-    
+     go to (selesai_dan_ucapan_terimakasih)
+ }
 }
