@@ -15,6 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/layanan', function () {
+    return view('layanan');
+});
+
+Route::get('/jenis-alat', function () {
+    return view('layanan-alat');
+});
+
+Route::get('/kerusakan', function () {
+    return view('layanan-kerusakan');
+});
+
+Route::get('/jenis-layanan', function () {
+    return view('layanan-jenis');
+});
+
+Route::get('/total-harga', function () {
+    return view('layanan-total-harga');
+});
+
+
+Route::get('/konsultasi', function () {
+    return view('konsultasi');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
