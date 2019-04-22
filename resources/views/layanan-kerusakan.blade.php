@@ -9,18 +9,15 @@
           <h3 class="section-subheading text-muted">---</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
 
-      
+      <div class="row">
           <!-- Prev/Next -->
           <div class="col-lg-12 text-center">
-            <a href="/jenis-alat" class="btn btn-primary btn-m text-uppercase">Prev</a>
-            <a href="/jenis-layanan" class="btn btn-primary btn-m text-uppercase">Next</a>            
+            <a href="/jenis-alat" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
+            <a href="/jenis-layanan" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</a>
           </div>
-
-        </div>
       </div>
+
     </div>
   </section>
 

@@ -21,13 +21,11 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12">
           <!-- Prev/Next -->
           <div class="col-lg-12 text-center">
-            <a href="/" class="btn btn-primary btn-m text-uppercase">Prev</a>
-            <a href="/kerusakan" class="btn btn-primary btn-m text-uppercase">Next</a>
+            <a href="/" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
+            <a href="/kerusakan" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</a>
           </div>
-        </div>
       </div>
 
     </div>
