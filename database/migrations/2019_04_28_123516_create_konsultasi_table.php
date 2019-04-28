@@ -14,9 +14,11 @@ class CreateKonsultasiTable extends Migration
     public function up()
     {
         Schema::create('konsultasi', function (Blueprint $table) {
-            $table->integer('id_customer');
-            $table->integer('id_pservice');
-            $table->text('pesan');
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->text('message');
             $table->timestamps();
         });
     }

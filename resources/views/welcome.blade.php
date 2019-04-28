@@ -36,7 +36,7 @@
   </section>
 
   <!-- Layanan Grid -->
-  <section class="bg-light" id="layanan">
+  <section class="bg-light" id="layanan" style="background: #fff">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -46,73 +46,68 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" data-toggle="modal" href="layananModal1">
+          <a class="layanan-link" href="/jenis-alat">
             <div class="layanan-hover">
               <div class="layanan-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/layanan/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
           </a>
           <div class="layanan-caption">
             <h4>iPhone</h4>
-            <p class="text-muted">?</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" data-toggle="modal" href="#layananModal2">
+          <a class="layanan-link" href="/jenis-alat">
             <div class="layanan-hover">
               <div class="layanan-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/layanan/02-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
           </a>
           <div class="layanan-caption">
             <h4>iPad</h4>
-            <p class="text-muted">?</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" data-toggle="modal" href="#layananModal3">
+          <a class="layanan-link" href="/jenis-alat">
             <div class="layanan-hover">
               <div class="layanan-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/layanan/03-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
           </a>
           <div class="layanan-caption">
             <h4>Macbook</h4>
-            <p class="text-muted">?</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" data-toggle="modal" href="#layananModal6">
+          <a class="layanan-link" href="/jenis-alat">
             <div class="layanan-hover">
               <div class="layanan-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/layanan/06-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
           </a>
           <div class="layanan-caption">
             <h4>Apple Watch</h4>
-            <p class="text-muted">?</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" data-toggle="modal" href="#layananModal1">
+          <a class="layanan-link" href="/jenis-alat">
             <div class="layanan-hover">
               <div class="layanan-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/layanan/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
           </a>
           <div class="layanan-caption">
             <h4>iMac</h4>
-            <p class="text-muted">?</p>
           </div>
         </div>
 
@@ -291,211 +286,5 @@
       </div>
     </div>
   </section>
-
-  <!-- Layanan Modals -->
-
-  <!-- Modal 1 -->
-  <div class="layanan-modal modal fade" id="layananModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="layanan-modal modal fade" id="layananModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="layanan-modal modal fade" id="layananModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="layanan-modal modal fade" id="layananModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="layanan-modal modal fade" id="layananModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="layanan-modal modal fade" id="layananModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/layanan/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 @include('layouts.footer')

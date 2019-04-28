@@ -15,30 +15,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/layanan', function () {
-    return view('layanan');
-});
+//LAYANAN
+Route::get('/layanan', 'LayananController@index');
+Route::get('/jenis-alat', 'LayananController@alat');
+Route::get('/kerusakan', 'LayananController@kerusakan');
+Route::get('/keluhan', 'LayananController@keluhan');
+Route::get('/jenis-layanan', 'LayananController@jenis');
+Route::get('/total-harga', 'LayananController@totalharga');
 
-Route::get('/jenis-alat', function () {
-    return view('layanan-alat');
-});
-
-Route::get('/kerusakan', function () {
-    return view('layanan-kerusakan');
-});
-
-Route::get('/jenis-layanan', function () {
-    return view('layanan-jenis');
-});
-
-Route::get('/total-harga', function () {
-    return view('layanan-total-harga');
-});
-
-
+//KONSULTASI
 Route::get('/konsultasi', function () {
     return view('konsultasi');
 });
+Route::get('/konsultasi', 'CustomerController@index');
+Route::post('/konsultasi/create', 'CustomerController@create');
+
+//DATABASE
+Route::get('/konsultasi-database', 'CustomerController@konsult');
+Route::get('/konsultasi-database/{id}/delete', 'CustomerController@delete');
+
+
 
 Auth::routes();
 
