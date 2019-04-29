@@ -41,9 +41,6 @@
                       <li class="nav-item active">
                         <a class="nav-link" href="{{ url('/home') }}">Database<span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/create') }}">Create</a>
-                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

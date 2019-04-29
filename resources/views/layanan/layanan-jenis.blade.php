@@ -21,17 +21,6 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <div class="row">
-            <div class="col-lg-12">
-              <select class="form-control">
-                <option>A</option>
-                <option>B</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
       <div class="row">
           <!-- Prev/Next -->
           <div class="col-lg-12 text-center">
