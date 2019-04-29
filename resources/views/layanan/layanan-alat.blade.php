@@ -10,23 +10,14 @@
       </div>
 
       <form>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-lg-12">
-              <select class="form-control">
-                <option>A</option>
-                <option>B</option>
-              </select>
-            </div>
-          </div>
-        </div>
 
         <div class="form-group">
           <div class="row">
             <div class="col-lg-12">
               <select class="form-control">
                 <option>A</option>
-                <option>B</option>
+                <option>A</option>
+                <option>A</option>
               </select>
             </div>
           </div>

@@ -64,6 +64,23 @@
                     </a>
               </td>
             </tr>
+            <tr class="table-active">
+              <th scope="row">1</th>
+              <td>Database Alat</td>
+              <td></td>
+              <td>
+                    <a href='/database-alat' class="btn btn-info" >
+                        <font color="white">Read</font>
+                    </a>
+                    <a href='' class="btn btn-success">
+                        <font color="white">Update </font>
+                    </a>
+                    <a href='' class="btn btn-danger">
+                        <font color="white">Delete </font>
+                    </a>
+              </td>
+            </tr>
+            
           </tbody>
         </table> 
     </div>

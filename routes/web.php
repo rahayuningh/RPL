@@ -34,6 +34,13 @@ Route::post('/konsultasi/create', 'CustomerController@create');
 Route::get('/konsultasi-database', 'CustomerController@konsult');
 Route::get('/konsultasi-database/{id}/delete', 'CustomerController@delete');
 
+Route::get('/database-alat', 'LayananController@jenis_alat');
+Route::post('/database-alat/create_alat', 'LayananController@create_alat');
+Route::get('/database-alat/{id}/delete_alat', 'LayananController@delete_alat');
+
+Route::get('/database-iphone', 'LayananController@iphone');
+Route::post('/database-iphone/create_iphone', 'LayananController@create_iphone');
+Route::get('/database-iphone/{id}/delete_iphone', 'LayananController@delete_iphone');
 
 
 Auth::routes();

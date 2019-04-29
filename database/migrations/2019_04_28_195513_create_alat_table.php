@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIphoneTable extends Migration
+class CreateAlatTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateIphoneTable extends Migration
      */
     public function up()
     {
-        Schema::create('iphone', function (Blueprint $table) {
+        Schema::create('alat', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tipe');
-            $table->string('warna');
+            $table->string('jenis_alat');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateIphoneTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('iphone');
+        Schema::dropIfExists('alat');
     }
 }
