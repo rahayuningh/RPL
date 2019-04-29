@@ -24,8 +24,8 @@
       <div class="row">
           <!-- Prev/Next -->
           <div class="col-lg-12 text-center">
-            <a href="/#layanan" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
-            <a href="/kerusakan" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</a>
+            <a href="/kerusakan" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
+            <a href="/jenis-layanan" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</a>
           </div>
       </div>
     </form>

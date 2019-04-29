@@ -55,7 +55,7 @@
 	            <tr class="table-active">
                 <td>{{$alat->jenis_alat}}</td>
 	              <td>
-                  <a href='/database-alat' class="btn btn-info" >
+                  <a href='/database-iphone' class="btn btn-info" >
                       <font color="white">Read</font>
                   </a>
                   <a href='' class="btn btn-success">

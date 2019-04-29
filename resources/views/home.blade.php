@@ -65,7 +65,7 @@
               </td>
             </tr>
             <tr class="table-active">
-              <th scope="row">1</th>
+              <th scope="row">3</th>
               <td>Database Alat</td>
               <td></td>
               <td>
