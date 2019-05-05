@@ -19,8 +19,8 @@
               </div>
               <form action="/database-alat/create_alat" method="POST">
                 {{ csrf_field() }}
-                <div class="modal-body">
 
+                <div class="modal-body">
                   <div class="form-group row">
                       <label for="jenis_alat" class="col-md-3 col-form-label text-md-right">Jenis Alat</label>
                       <div class="col-md-6">
@@ -28,12 +28,13 @@
                           <p class="help-block text-danger"></p>
                       </div>
                   </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                  </div>
-                </form>
+                </div>
+                  
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+              </form>
 
             </div>
           </div>

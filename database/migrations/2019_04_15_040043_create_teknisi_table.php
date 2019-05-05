@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePserviceTable extends Migration
+class CreateTeknisiTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreatePserviceTable extends Migration
      */
     public function up()
     {
-        Schema::create('pservice', function (Blueprint $table) {
-            $table->bigIncrements('id_pservice');
+        Schema::create('teknisi', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('nama_pservice');
-            $table->string('alamat_pservice');
-            $table->integer('notelp_pservice');
+            $table->text('alamat_pservice');
+            $table->string('notelp_pservice');
             $table->string('email_pservice');
             $table->timestamps();
         });

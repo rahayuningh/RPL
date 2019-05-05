@@ -11,17 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','LayananController@index');
 
 //LAYANAN
-Route::get('/layanan', 'LayananController@index');
-Route::get('/jenis-alat', 'LayananController@alat');
-Route::get('/kerusakan', 'LayananController@kerusakan');
+Route::get('/layanan', 'LayananController@layanan');
+/*Route::get('/kerusakan', 'LayananController@kerusakan');
 Route::get('/keluhan', 'LayananController@keluhan');
-Route::get('/jenis-layanan', 'LayananController@jenis');
-Route::get('/total-harga', 'LayananController@totalharga');
+Route::get('/jenis-layanan', 'LayananController@jenis');*/
+Route::get('/rekap-pesanan', 'LayananController@totalharga');
 
 //KONSULTASI
 Route::get('/konsultasi', function () {
@@ -41,6 +38,10 @@ Route::get('/database-alat/{id}/delete_alat', 'LayananController@delete_alat');
 Route::get('/database-iphone', 'LayananController@iphone');
 Route::post('/database-iphone/create_iphone', 'LayananController@create_iphone');
 Route::get('/database-iphone/{id}/delete_iphone', 'LayananController@delete_iphone');
+
+Route::get('/teknisi', 'CustomerController@teknisi');
+Route::post('/teknisi/create_teknisi', 'CustomerController@create_teknisi');
+Route::get('/teknisi/{id}/delete_teknisi', 'CustomerController@delete_teknisi');
 
 
 Auth::routes();

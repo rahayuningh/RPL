@@ -4,13 +4,47 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading text-uppercase">selamat datang di ardp.service</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tentang Kami</a>
+        <div class="intro-heading text-uppercase" style="color: #fd0066">selamat datang di ardp.service</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#layanan">Layanan</a>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
+  <!-- Layanan Grid -->
+  <section class="bg-light" id="layanan" style="background: #fff">
+    {{ csrf_field() }}                
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Layanan</h2>
+          <h3 class="section-subheading text-muted">Jenis Alat yang Akan di Service</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        @foreach($data_alat as $alat)
+        <div class="col-md-4 col-sm-6 layanan-item">
+          <a class="layanan-link" href="/layanan">
+            <div class="layanan-hover">
+              <div class="layanan-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/layanan/{{$alat->jenis_alat}}.png" alt="">
+          </a>
+          <div>
+            <h5 class="heading layanan-caption" >
+              <a href="/jenis-alat">Service {{$alat->jenis_alat}}</a>
+            </h5>
+          </div>
+        </div>
+        @endforeach
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
   <section id="services">
     <div class="container">
       <div class="row">
@@ -31,86 +65,6 @@
           <h4 class="service-heading">Misi</h4>
           <p class="text-muted">Menjadi pilihan service center spesialis produk Apple terbaik dengan harga yang terjangkau untuk semua kalangan, serta memberikan servis profesional dengan spare part berkualitas original.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Layanan Grid -->
-  <section class="bg-light" id="layanan" style="background: #fff">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Layanan</h2>
-          <h3 class="section-subheading text-muted">Jenis Alat yang Akan di Service</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" href="/jenis-alat">
-            <div class="layanan-hover">
-              <div class="layanan-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
-          </a>
-          <div class="layanan-caption">
-            <h4>iPhone</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" href="/jenis-alat">
-            <div class="layanan-hover">
-              <div class="layanan-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
-          </a>
-          <div class="layanan-caption">
-            <h4>iPad</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" href="/jenis-alat">
-            <div class="layanan-hover">
-              <div class="layanan-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
-          </a>
-          <div class="layanan-caption">
-            <h4>Macbook</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" href="/jenis-alat">
-            <div class="layanan-hover">
-              <div class="layanan-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
-          </a>
-          <div class="layanan-caption">
-            <h4>Apple Watch</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 layanan-item">
-          <a class="layanan-link" href="/jenis-alat">
-            <div class="layanan-hover">
-              <div class="layanan-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/layanan/kosong.png" alt="">
-          </a>
-          <div class="layanan-caption">
-            <h4>iMac</h4>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -155,14 +109,14 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+<!--             <li class="timeline-inverted">
               <div class="timeline-image">
                 <h4>Be Part
                   <br>Of Our
                   <br>Story!</h4>
               </div>
             </li>
-          </ul>
+ -->          </ul>
         </div>
       </div>
     </div>
@@ -174,7 +128,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Teknisi Kami</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">---</h3>
         </div>
       </div>
       <div class="row">
@@ -253,14 +207,14 @@
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <p class="large text-muted">---</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Clients -->
-  <section class="py-5">
+<!--   <section class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -285,6 +239,6 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 @include('layouts.footer')

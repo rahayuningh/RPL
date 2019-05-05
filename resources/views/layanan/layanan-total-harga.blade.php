@@ -36,7 +36,7 @@
               <div class="col-md-3"></div>
               <div class="col-lg-6 text-center">
                 <div class="form-group">
-                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="" required="required" data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>

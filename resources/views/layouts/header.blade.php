@@ -30,7 +30,11 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/">ardp.service</a>
+   
+      <a class="navbar-brand js-scroll-trigger" href="/">
+        <img src="img/logos/ardpservice.png" style="max-width:50px">
+        ardp.service
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -49,7 +53,16 @@
           <li class="nav-item">
             <a class="nav-link" href="konsultasi">Konsultasi Gratis</a>
           </li>
+          <li class="nav-item">
+            <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/ardp.service/" style="background-color:transparent;" class="fab fa-instagram"></a>
+            </li>
+            </ul>
+          </li>
         </ul>
+        
+
       </div>
     </div>
   </nav>

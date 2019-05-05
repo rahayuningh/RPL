@@ -7,14 +7,16 @@ use Illuminate\Http\Request;
 class LayananController extends Controller
 {
     public function index(){
-    	return view('/');
+    	$data_alat = \App\Alat::all();
+        return view('welcome',["data_alat"=>$data_alat]);
     }
 
-    public function alat(){
-	    return view('layanan.layanan-alat');
+    public function layanan(){
+        $jenis_alat = \App\iPhone::all();
+	    return view('layanan.layanan-alat',["jenis_alat"=>$jenis_alat]);
     }
 
-    public function kerusakan(){
+/*    public function kerusakan(){
 	    return view('layanan.layanan-kerusakan');
     }
 
@@ -24,7 +26,7 @@ class LayananController extends Controller
 
     public function jenis(){
 	    return view('layanan.layanan-jenis');
-    }
+    }*/
 
     public function totalharga(){
 	    return view('layanan.layanan-total-harga');

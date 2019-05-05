@@ -28,4 +28,22 @@ class CustomerController extends Controller
     	return redirect('/konsultasi-database')->with('sukses','Data berhasil dihapus');
     }
 
+    /*Teknisi*/
+    public function teknisi(){
+        $data_teknisi = \App\Teknisi::all();
+        return view('/teknisi',["data_teknisi"=>$data_teknisi]);
+    }
+
+    public function create_teknisi(Request $request){
+        \App\Teknisi::create($request->all());
+        return redirect('/teknisi')->with('sukses','Jenis alat telah ditambahkan');
+    }
+
+    public function delete_teknisi($id)
+    {
+        $data_alat = \App\Teknisi::find($id);
+        $data_alat->delete();
+        return redirect('/teknisi')->with('sukses','Data berhasil dihapus');
+    }
+
 }
