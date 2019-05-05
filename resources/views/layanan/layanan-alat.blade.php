@@ -54,11 +54,14 @@
             <h2 class="section-heading text-uppercase ">Keluhan</h2>
           </div>
         </div>
-
         <div class="row">
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
             <div class="form-group">
+              <form action="upload.php" method="post" enctype="multipart/form-data">
+                Pilih file: <input type="file" name="berkas" class="btn" />
+                <button type="submit" name="upload" value="upload" class="btn btn-primary">upload</button>
+              </form>
               <textarea class="form-control" id="message" name="message" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
