@@ -10,39 +10,40 @@
         </div>
       </div>
 
-          <form action="/konsultasi/create" method="POST">
-            {{ csrf_field() }}
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-lg-6 text-center">
-                <div class="form-group">
-                  <input class="form-control" id="address" name="address" type="text" placeholder="Your Address *" required="required" data-validation-required-message="Please enter your address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-            </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-lg-6 text-md-left">
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <th scope="col">Jenis</th>
+              <td>iphonejbsdgfugbu</td>
+            </tr>
+            <tr>
+              <th scope="col">Tipe</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">Warna</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">Kerusakan</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">Keluhan</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">Jenis Layanan</th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>
+    </div>    
 
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-lg-6 text-center">
-                <div class="form-group">
-                  <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-lg-6 text-center">
-                <div class="form-group">
-                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-            </div>
-
-          </form>
 <br><br>
       <div class="row">
         <div class="col-lg-12 text-center">
