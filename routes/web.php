@@ -43,6 +43,11 @@ Route::get('/teknisi', 'CustomerController@teknisi');
 Route::post('/teknisi/create_teknisi', 'CustomerController@create_teknisi');
 Route::get('/teknisi/{id}/delete_teknisi', 'CustomerController@delete_teknisi');
 
+Route::get('/customer', 'CustomerController@customer');
+Route::post('/customer/create_customer', 'CustomerController@create_customer');
+Route::get('/customer/{id}/delete_customer', 'CustomerController@delete_customer');
+
+
 
 Auth::routes();
 

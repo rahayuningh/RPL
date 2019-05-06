@@ -34,7 +34,7 @@
           </a>
           <div>
             <h5 class="heading layanan-caption" >
-              <a href="/jenis-alat">Service {{$alat->jenis_alat}}</a>
+              <a href="/layanan" id="{{$alat->jenis_alat}}" name="{{$alat->jenis_alat}}">Service {{$alat->jenis_alat}}</a>
             </h5>
           </div>
         </div>

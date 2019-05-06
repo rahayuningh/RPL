@@ -36,7 +36,7 @@ class CustomerController extends Controller
 
     public function create_teknisi(Request $request){
         \App\Teknisi::create($request->all());
-        return redirect('/teknisi')->with('sukses','Jenis alat telah ditambahkan');
+        return redirect('/teknisi')->with('sukses','Teknisi alat telah ditambahkan');
     }
 
     public function delete_teknisi($id)
@@ -45,5 +45,24 @@ class CustomerController extends Controller
         $data_alat->delete();
         return redirect('/teknisi')->with('sukses','Data berhasil dihapus');
     }
+
+    /*Customer*/
+    public function customer(){
+        $data_customer = \App\Customer::all();
+        return view('/#layanan',["data_customer"=>$data_customer]);
+    }
+
+    public function create_customer(Request $request){
+        \App\Customer::create($request->all());
+        return redirect('/#layanan')->with('sukses','Customer alat telah ditambahkan');
+    }
+
+    public function delete_customer($id)
+    {
+        $data_alat = \App\Customer::find($id);
+        $data_alat->delete();
+        return redirect('/#layanan')->with('sukses','Data berhasil dihapus');
+    }
+
 
 }
