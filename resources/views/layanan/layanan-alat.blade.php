@@ -2,8 +2,9 @@
 
   <!-- Contact -->
   <section id="layanan">
+      <form action="/customer/create_customer" method="POST">
+
     <div class="container">
-      <form>
         {{ csrf_field() }}
 
         <!-- Sub Jenis Alat -->
@@ -96,8 +97,6 @@
           </div>
         </div>
 
-          <form action="/customer/create_customer" method="POST">
-            {{ csrf_field() }}
             <div class="modal-body">
               <div class="form-group row">
                   <label for="nama_customer" class="col-md-3 col-form-label text-md-right">Nama</label>
@@ -129,22 +128,18 @@
                       <p class="help-block text-danger"></p>
                   </div>
               </div>
-            </div> 
+            </div>          
 
+    </div>
           <div class="row">
               <!-- Prev/Next -->
               <div class="col-lg-12 text-center">
                 <a href="/#layanan" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
-                <a href="/rekap-pesanan" type="submit" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</a>
+                <button href="/rekap-pesanan" type="submit" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</button>
               </div>
-          </div>
-
-          </form>
-
-          
-
+          </div> 
     </form>
-    </div>
+
   </section>
 
 @include('layouts.footer')

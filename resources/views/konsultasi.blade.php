@@ -14,6 +14,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
+
           <form action="/konsultasi/create" method="POST">
             {{ csrf_field() }}
             <div class="row">
@@ -45,6 +46,7 @@
               </div>
             </div>
           </form>
+
         </div>
       </div>
     </div>
