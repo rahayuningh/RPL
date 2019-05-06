@@ -2,7 +2,7 @@
 
   <!-- Contact -->
   <section id="layanan">
-      <form action="/customer/create_customer" method="POST">
+      <form action="/layanan/storeMsg" method="POST">
 
     <div class="container">
         {{ csrf_field() }}
@@ -18,16 +18,16 @@
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
             <div class="form-group">
-              <select class="form-control">
+              <select name="alat_id"class="form-control">
                 @foreach($jenis_alat as $jenis_alat)
-                <option>{{$jenis_alat->tipe}}</option>
+                <option value="{{$jenis_alat->id}}">{{$jenis_alat->tipe}}</option>
                 @endforeach
               </select>
               <br>
-              <select class="form-control">
-                <option>Black</option>
-                <option>Silver</option>
-                <option>Gold</option>
+              <select name="warna_alat" class="form-control">
+                <option value="Black">Black</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
               </select>
             </div>
           </div>
@@ -44,7 +44,7 @@
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
             <div class="form-group">
-              <textarea class="form-control" id="message" name="message" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
+              <textarea class="form-control" id="kerusakan" name="kerusakan" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -61,11 +61,13 @@
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
             <div class="form-group">
+              <!--
               <form action="upload.php" method="post" enctype="multipart/form-data">
-                Pilih file: <input type="file" name="berkas" class="btn" />
+                Pilih file: <input type="file" id="berkas" name="berkas" class="btn" />
                 <button type="submit" name="upload" value="upload" class="btn btn-primary">upload</button>
               </form>
-              <textarea class="form-control" id="message" name="message" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
+              -->
+              <textarea class="form-control" id="keluhan" name="keluhan" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -82,10 +84,10 @@
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
             <div class="form-group">
-              <select class="form-control">
-                <option>Teknisi datang ke rumah</option>
-                <option>Datang ke tempat service</option>
-                <option>Kirim barang ke tempat service</option>>
+              <select name="layanan_id" class="form-control">
+                <option value= 1>Teknisi datang ke rumah</option>
+                <option value= 2>Datang ke tempat service</option>
+                <option value= 3>Kirim barang ke tempat service</option>>
               </select>
             </div>
           </div>
@@ -135,7 +137,7 @@
               <!-- Prev/Next -->
               <div class="col-lg-12 text-center">
                 <a href="/#layanan" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
-                <button href="/rekap-pesanan" type="submit" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</button>
+                <button type="submit" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Next</button>
               </div>
           </div> 
     </form>

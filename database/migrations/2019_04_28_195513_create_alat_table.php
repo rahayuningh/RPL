@@ -14,7 +14,7 @@ class CreateAlatTable extends Migration
     public function up()
     {
         Schema::create('alat', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('alat_id');
             $table->string('jenis_alat');
             $table->timestamps();
         });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pesanan;
 
 class LayananController extends Controller
 {
@@ -14,6 +15,23 @@ class LayananController extends Controller
     public function layanan(){
         $jenis_alat = \App\iPhone::all();
 	    return view('layanan.layanan-alat',["jenis_alat"=>$jenis_alat]);
+    }
+
+    public function storeMsg(Request $request){
+        $pesanan = Pesanan::create([
+            'alat_id' => $request->alat_id,
+            'warna_alat' => $request->warna_alat,
+            'kerusakan' => $request->kerusakan,
+            'keluhan' => $request->keluhan,
+            'filename' => $request->berkas,
+            'layanan_id' => $request->layanan_id,
+            'nama_customer' => $request->nama_customer,
+            'alamat_customer' => $request->alamat_customer,
+            'notelp_customer' => $request->notelp_customer, 
+            'email_customer' => $request->email_customer
+        ]);
+        return redirect('/rekap-pesanan')/*->with('sukses','Customer alat telah ditambahkan')*/;
+
     }
 
 /*    public function kerusakan(){
@@ -29,7 +47,11 @@ class LayananController extends Controller
     }*/
 
     public function totalharga(){
-	    return view('layanan.layanan-total-harga');
+        $pesanan = Pesanan::orderBy('created_at','desc')->first();
+        $iphone = \App\iPhone::all();
+        $layanan = \App\Layanan::all();
+
+	    return view('layanan.layanan-total-harga',compact('pesanan','iphone', 'layanan'));
     }
 
     public function jenis_alat(){

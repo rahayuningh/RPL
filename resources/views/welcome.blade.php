@@ -20,9 +20,8 @@
           <h3 class="section-subheading text-muted">Jenis Alat yang Akan di Service</h3>
         </div>
       </div>
-
+      @foreach($data_alat as $alat)
       <div class="row">
-        @foreach($data_alat as $alat)
         <div class="col-md-4 col-sm-6 layanan-item">
           <a class="layanan-link" href="/layanan">
             <div class="layanan-hover">
@@ -34,11 +33,11 @@
           </a>
           <div>
             <h5 class="heading layanan-caption" >
-              <a href="/layanan" id="{{$alat->jenis_alat}}" name="{{$alat->jenis_alat}}">Service {{$alat->jenis_alat}}</a>
+              <a href="/layanan" name="{{$alat->jenis_alat}}" id="{{$alat->jenis_alat}}">Service {{$alat->jenis_alat}}</a>
             </h5>
           </div>
         </div>
-        @endforeach
+      @endforeach  
       </div>
     
     </div>

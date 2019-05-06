@@ -15,7 +15,16 @@ class CreatePesananTable extends Migration
     {
         Schema::create('pesanan', function (Blueprint $table) {
             $table->increments('id');
-
+            $table->integer('alat_id');
+            $table->string('warna_alat');
+            $table->string('kerusakan');
+            $table->string('keluhan');
+            $table->string('filename') -> nullable();
+            $table->integer('layanan_id');
+            $table->string('nama_customer');
+            $table->string('alamat_customer');
+            $table->char('notelp_customer',15);
+            $table->string('email_customer');
             $table->timestamps();
         });
     }

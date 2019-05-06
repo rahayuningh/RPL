@@ -14,7 +14,7 @@ class CreateLayananTable extends Migration
     public function up()
     {
         Schema::create('layanan', function (Blueprint $table) {
-            $table->integer('id_customer');
+            $table->integer('id');
             $table->string('jenis_layanan');
             $table->timestamps();
         });

@@ -15,6 +15,7 @@ Route::get('/','LayananController@index');
 
 //LAYANAN
 Route::get('/layanan', 'LayananController@layanan');
+Route::post('/layanan/storeMsg', 'LayananController@storeMsg');
 /*Route::get('/kerusakan', 'LayananController@kerusakan');
 Route::get('/keluhan', 'LayananController@keluhan');
 Route::get('/jenis-layanan', 'LayananController@jenis');*/

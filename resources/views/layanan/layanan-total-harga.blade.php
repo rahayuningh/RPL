@@ -17,27 +17,45 @@
             <tbody>
               <tr>
                 <th scope="col">Jenis</th>
-                <td>iphonejbsdgfugbu</td>
+                <td>Iphone</td>
               </tr>
               <tr>
                 <th scope="col">Tipe</th>
-                <td></td>
+                @foreach ($iphone as $iphone)
+                  @if ($iphone->id === $pesanan->alat_id)
+                    <td> 
+                      {{ $iphone->tipe }} 
+                    </td>
+                    @endif
+                @endforeach
               </tr>
               <tr>
                 <th scope="col">Warna</th>
-                <td></td>
+                <td>
+                  {{ $pesanan->warna_alat }}
+                </td>
               </tr>
               <tr>
                 <th scope="col">Kerusakan</th>
-                <td></td>
+                <td>
+                  {{ $pesanan->kerusakan }}
+                </td>
               </tr>
               <tr>
                 <th scope="col">Keluhan</th>
-                <td></td>
+                <td>
+                  {{ $pesanan->keluhan }}
+                </td>
               </tr>
               <tr>
                 <th scope="col">Jenis Layanan</th>
-                <td></td>
+                @foreach ($layanan as $layanan)
+                  @if ($layanan->id === $pesanan->layanan_id)
+                    <td> 
+                      {{ $layanan->jenis_layanan }} 
+                    </td>
+                  @endif
+                @endforeach
               </tr>
             </tbody>
           </table> 
