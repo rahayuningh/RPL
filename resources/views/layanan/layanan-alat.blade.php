@@ -50,6 +50,25 @@
           </div>
         </div>
 
+        
+        <!-- Checkbox -->
+        <div class="row">
+        <div class="col-md-3"></div>
+          <div class="col-lg-6 text-center">
+            <div class="form-group">
+              <div class="checkbox">
+                @foreach($jenis_kerusakan as $jenis_kerusakan)
+                  <label>
+                    <input type="checkbox" name="cost[]" value="{{$jenis_kerusakan->id}}" 
+                    > {{$jenis_kerusakan->jenis_kerusakan}} - {{$jenis_kerusakan->biaya}}
+                  </label>
+                @endforeach
+            </div>
+          </div>
+        </div>
+        </div>
+        
+
 
         <!-- Keluhan -->
         <div class="row">

@@ -36,6 +36,12 @@
                 </td>
               </tr>
               <tr>
+                <th scope="col">Biaya</th>
+                <td>
+                  {{ $pesanan->biaya }}
+                </td>
+              </tr>
+              <tr>
                 <th scope="col">Kerusakan</th>
                 <td>
                   {{ $pesanan->kerusakan }}
@@ -49,7 +55,7 @@
               </tr>
               <tr>
                 <th scope="col">Jenis Layanan</th>
-                @foreach ($layanan as $layanan)
+                 @foreach ($layanan as $layanan)
                   @if ($layanan->id === $pesanan->layanan_id)
                     <td> 
                       {{ $layanan->jenis_layanan }} 
@@ -65,7 +71,7 @@
       <div class="row">
           <!-- Prev/Next -->
           <div class="col-lg-12 text-center">
-            <a href="/layanan" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
+            <a href="/layanan/{{$pesanan->id}}/delete" class="btn btn-primary btn-m text-uppercase" style="margin:10px;">Prev</a>
             <a href="/#layanan" class="btn btn-primary btn-m text-uppercase"style="margin:10px;">Pesan</a>
           </div>
       </div>

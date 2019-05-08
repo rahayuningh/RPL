@@ -19,9 +19,9 @@
           <h2 class="section-heading text-uppercase">Layanan</h2>
           <h3 class="section-subheading text-muted">Jenis Alat yang Akan di Service</h3>
         </div>
-      </div>
-      @foreach($data_alat as $alat)
+      </div>      
       <div class="row">
+        @foreach($data_alat as $alat)
         <div class="col-md-4 col-sm-6 layanan-item">
           <a class="layanan-link" href="/layanan">
             <div class="layanan-hover">

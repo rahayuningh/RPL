@@ -39,12 +39,14 @@
                     <a href='/konsultasi-database' class="btn btn-info" >
                         <font color="white">Read</font>
                     </a>
+                    <!--                    
                     <a href='' class="btn btn-success">
                         <font color="white">Update </font>
                     </a>
                     <a href='' class="btn btn-danger">
                         <font color="white">Delete </font>
                     </a>
+                    -->
               </td>
             </tr>
 
@@ -56,12 +58,14 @@
                     <a href='/konsultasi-database' class="btn btn-info" >
                         <font color="white">Read</font>
                     </a>
+                    <!--
                     <a href='' class="btn btn-success">
                         <font color="white">Update </font>
                     </a>
                     <a href='' class="btn btn-danger">
                         <font color="white">Delete </font>
                     </a>
+                    -->
               </td>
             </tr>
             <tr class="table-active">
@@ -72,30 +76,37 @@
                     <a href='/database-alat' class="btn btn-info" >
                         <font color="white">Read</font>
                     </a>
+                    <!--
                     <a href='' class="btn btn-success">
                         <font color="white">Update </font>
                     </a>
                     <a href='' class="btn btn-danger">
                         <font color="white">Delete </font>
                     </a>
+                    -->
               </td>
             </tr>
+            <!--
             <tr>
-              <th scope="row">2</th>
+              <th scope="row">4</th>
               <td>Data Teknisi</td>
+              
               <td>Berisi Biodata Teknisi Jasa Service</td>
               <td>
                     <a href='/konsultasi-database' class="btn btn-info" >
                         <font color="white">Read</font>
                     </a>
+                    <!--
                     <a href='' class="btn btn-success">
                         <font color="white">Update </font>
                     </a>
                     <a href='' class="btn btn-danger">
                         <font color="white">Delete </font>
                     </a>
+                    
               </td>
             </tr>
+            -->
           </tbody>
         </table> 
     </div>
