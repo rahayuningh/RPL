@@ -41,12 +41,14 @@
                   {{ $pesanan->biaya }}
                 </td>
               </tr>
+              <!--
               <tr>
                 <th scope="col">Kerusakan</th>
                 <td>
                   {{ $pesanan->kerusakan }}
                 </td>
               </tr>
+              -->
               <tr>
                 <th scope="col">Keluhan</th>
                 <td>

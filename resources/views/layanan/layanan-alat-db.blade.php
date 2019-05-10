@@ -59,11 +59,12 @@
                   <a href='/database-iphone' class="btn btn-info" >
                       <font color="white">Read</font>
                   </a>
+                  <!--
                   <a href='' class="btn btn-success">
                       <font color="white">Update </font>
-                  </a>
+                  </a>-->
 
-                  <a href='/database-alat/{{$alat->id}}/delete_alat' class="btn btn-danger" onclick="return confirm('Yakin hapus data?')">
+                  <a href='/database-alat/{{$alat->alat_id}}/delete_alat' class="btn btn-danger" onclick="return confirm('Yakin hapus data?')">
                         <font color="white">Delete </font>
                     </a>
 

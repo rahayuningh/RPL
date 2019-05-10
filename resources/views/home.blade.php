@@ -55,7 +55,7 @@
               <td>Pesanan Service</td>
               <td>Layanan yang dipesan pelanggan</td>
               <td>
-                    <a href='/konsultasi-database' class="btn btn-info" >
+                    <a href='/pesanan-database' class="btn btn-info" >
                         <font color="white">Read</font>
                     </a>
                     <!--

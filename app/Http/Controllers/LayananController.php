@@ -41,7 +41,7 @@ class LayananController extends Controller
         $pesan = new Pesanan;
             $pesan->alat_id = $request->alat_id;
             $pesan->warna_alat = $request->warna_alat;
-            $pesan->kerusakan = $request->kerusakan;
+           // $pesan->kerusakan = $request->kerusakan;
             $pesan->keluhan = $request->keluhan;
             $pesan->biaya = $tempcost;
             $pesan->filename = $request->berkas;
@@ -107,9 +107,9 @@ class LayananController extends Controller
         return redirect('/database-alat')->with('sukses','Jenis alat telah ditambahkan');
     }
 
-    public function delete_alat($id)
+    public function delete_alat($alat_id)
     {
-        $data_alat = \App\Alat::find($id);
+        $data_alat = \App\Alat::find($alat_id);
         $data_alat->delete();
         return redirect('/database-alat')->with('sukses','Data berhasil dihapus');
     }

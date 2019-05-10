@@ -15,6 +15,20 @@ class CustomerController extends Controller
     	return view('customer.konsultasi-db',["data_konsultasi"=>$data_konsultasi]);
     }
 
+    public function pesanan(){
+        $data_pesanan = \App\Pesanan::all();
+        $iphone = \App\Iphone::all();
+        $layanan = \App\Layanan::all();
+    	return view('customer.pesanan-db',compact('data_pesanan','iphone','layanan'));
+    }
+
+    public function deletepesanan($id)
+    {
+    	$data_pesanan = \App\Pesanan::find($id);
+    	$data_pesanan->delete();
+    	return redirect('/pesanan-database')->with('sukses','Data berhasil dihapus');
+    }
+
     public function create(Request $request)
     {
     	\App\Konsultasi::create($request->all());

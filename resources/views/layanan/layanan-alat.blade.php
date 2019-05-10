@@ -40,6 +40,7 @@
           </div>
         </div>
 
+        <!--
         <div class="row">
         <div class="col-md-3"></div>
           <div class="col-lg-6 text-center">
@@ -49,7 +50,7 @@
             </div>
           </div>
         </div>
-
+        -->
         
         <!-- Checkbox -->
         <div class="row">
@@ -86,7 +87,7 @@
                 <button type="submit" name="upload" value="upload" class="btn btn-primary">upload</button>
               </form>
               -->
-              <textarea class="form-control" id="keluhan" name="keluhan" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
+              <textarea placeholder="Contoh: Layar mati" class="form-control" id="keluhan" name="keluhan" placeholder="" required="required" data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>

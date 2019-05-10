@@ -17,7 +17,7 @@ class CreatePesananTable extends Migration
             $table->increments('id');
             $table->integer('alat_id');
             $table->string('warna_alat');
-            $table->string('kerusakan');
+            //$table->string('kerusakan');
             $table->bigInteger('biaya');
             $table->string('keluhan');
             $table->string('filename') -> nullable();
